@@ -28,5 +28,5 @@
     7.1 Create a folder 'route' in api folder
     7.2 Create folder 'controller' in api to store the content
 
-8. Create Sign Up API route
+8. Create Sign Up    API route
     8.1 

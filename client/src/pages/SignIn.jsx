@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 import {signInStart, signInSuccess, signInFailure} from '../redux/user/userSlice';
+import OAuth from '../components/OAuth';
 
 
 export default function SignIn() {
@@ -74,7 +75,8 @@ export default function SignIn() {
             className='bg-slate-700 text-center font-semibold text-white 
                   py-3 rounded-lg uppercase hover:opacity-90 disabled:opacity-80' >
                     {loading ? 'Loading...' : 'Sign In'}</button>
-        <button> Create account using google</button>
+        {/* <button> Create account using google</button> */}
+        <OAuth/>
 
         {error && <p className='text-red-500'>{error}</p>}
       </form>

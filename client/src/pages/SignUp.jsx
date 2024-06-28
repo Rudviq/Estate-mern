@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import OAuth from '../components/OAuth';
 
 export default function SignOut() {
 
@@ -64,7 +65,8 @@ export default function SignOut() {
             className='bg-slate-700 text-center font-semibold text-white 
                   py-3 rounded-lg uppercase hover:opacity-90 disabled:opacity-80' >
                     {loading ? 'Loading...' : 'Sign Up'}</button>
-        <button> Create account using google</button>
+        {/* <button> Create account using google</button> */}
+        <OAuth/>
 
         {error && <p className='text-red-500'>{error}</p>}
       </form>
